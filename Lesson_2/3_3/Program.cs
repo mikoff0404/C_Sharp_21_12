@@ -8,9 +8,7 @@ if (array.Length % 2 == 0)
         array[i] = array[i] * array[n];
         n = n - 1;
         Console.Write(array[i] + " ");
-
     }
-        
 }
 else
 {
