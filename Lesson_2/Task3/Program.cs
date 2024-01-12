@@ -13,3 +13,23 @@ while (i < n)
     i = i + 1;
 }
 Console.WriteLine($"Max weight = {max_weight}");
+
+max_weight = array[0];
+for (int j = 0; j < n; j++)
+{
+    if (array[j] > max_weight)
+    {
+        max_weight = array[j];
+    }
+}
+Console.WriteLine($"Max weight = {max_weight}");
+
+max_weight = array[0];
+foreach(int e in array)
+{
+    if (e > max_weight)
+    {
+        max_weight = e;
+    }
+}
+Console.WriteLine($"Max weight = {max_weight}");
