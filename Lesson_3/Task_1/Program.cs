@@ -54,20 +54,43 @@
 // int number = square (5);
 // Console.WriteLine($" {number}");
 
-double calculate(int a, int b, int c)
+// double calculate(int a, int b, int c)
+// {
+//     double num1 = a * b;
+//     double num2 = num1 / c;
+//     return num2;
+// }
+
+// double num3 = calculate(2, 5, 5);
+// Console.Write(num3);
+
+Console.WriteLine("Введите число - ");
+int a = int.Parse(Console.ReadLine()!);
+
+int square(int b)
 {
-    double num1 = a * b;
-    double num2 = num1 / c;
-    return num2;
+    int result = b * b;
+    return result;
 }
 
-double num3 = calculate(2, 5, 5);
-Console.Write(num3);
 
+Console.Write($"квадрат числа {a} равен {square(a)}");
 
+// Console.WriteLine("Введите число - ");
+// int b = int.Parse(Console.ReadLine()!);
 
+// void printsquare(int n)
+// {
+//     int i = 1;
+//     while (i <= n)
+//     {
+//         Console.Write($"{i*i} "); 
+//         i++;
+//     }
 
+// }
 
+// printsquare(b);
 
 
 
