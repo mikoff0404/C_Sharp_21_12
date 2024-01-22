@@ -64,17 +64,17 @@
 // double num3 = calculate(2, 5, 5);
 // Console.Write(num3);
 
-Console.WriteLine("Введите число - ");
-int a = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите число - ");
+// int a = int.Parse(Console.ReadLine()!);
 
-int square(int b)
-{
-    int result = b * b;
-    return result;
-}
+// int square(int b)
+// {
+//     int result = b * b;
+//     return result;
+// }
 
 
-Console.Write($"квадрат числа {a} равен {square(a)}");
+// Console.Write($"квадрат числа {a} равен {square(a)}");
 
 // Console.WriteLine("Введите число - ");
 // int b = int.Parse(Console.ReadLine()!);
@@ -93,5 +93,58 @@ Console.Write($"квадрат числа {a} равен {square(a)}");
 // printsquare(b);
 
 
+// void ZeroEvenElements(int[] arr)
+// {
+//         for (int i = 0; i < arr.Length; i++)
+//     {
+//         if(arr[i] % 2 == 0)
+//         {
+//             arr[i] = 0;
+//         }
+//     }
+// }
 
+// void PrintArr(int[] arr)
+// {
+//     foreach (int e in arr)
+//     {
+//         Console.Write($"{e} ");
+//     }
+// }
 
+// int[] arr = {1,2,3,4,5};
+// ZeroEvenElements(arr);
+// PrintArr(arr);
+
+// Random rnd = new Random();
+
+// int size = 100;
+// int[] array = new int[size];
+// int i = 0;
+// while(i < size)
+// {
+//     array[i] = rnd.Next(-100, 100);
+//     i++;
+// }
+// i=0;
+// while(i < size)
+// {
+//     Console.Write($" {array[i] }");
+//     i++;
+// }
+
+int size = 5;
+int[] arr = new int[size];
+int i = 0;
+while(i<arr.Length)
+{
+    Console.Write($"введите {i}- элемент массива ");
+    arr[i] = int.Parse(Console.ReadLine()!);
+    i++;
+}
+i=0;
+while(i<arr.Length)
+{
+    Console.Write($"{arr[i]} ");
+    i++;
+}
