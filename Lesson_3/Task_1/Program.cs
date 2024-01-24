@@ -133,18 +133,54 @@
 //     i++;
 // }
 
-int size = 5;
-int[] arr = new int[size];
-int i = 0;
-while(i<arr.Length)
+// int size = 5;
+// int[] arr = new int[size];
+// int i = 0;
+// while(i<arr.Length)
+// {
+//     Console.Write($"введите {i}- элемент массива ");
+//     arr[i] = int.Parse(Console.ReadLine()!);
+//     i++;
+// }
+// i=0;
+// while(i<arr.Length)
+// {
+//     Console.Write($"{arr[i]} ");
+//     i++;
+// }
+
+Console.Write("Введите размер массива - "); // вводим размер массива
+int size = int.Parse(Console.ReadLine()!); // 
+
+int[] array1 = GenerateArray(size); // обращаемся к функции генерации массива
+//получаем сгенерированный массив array1
+
+int Result1 = CountNumbers(array1); //обращение к функции подсчета четных чисел
+
+int[] GenerateArray(int size1) // функция генерации массива
 {
-    Console.Write($"введите {i}- элемент массива ");
-    arr[i] = int.Parse(Console.ReadLine()!);
-    i++;
+    int[] array = new int[size1];
+    Random rnd = new Random();
+    for (int i = 0; i < size1; i++)
+    {
+        array[i] = rnd.Next(0, 99);
+        Console.Write($"{array[i]} ");
+        
+    }
+    return array; // возвращаем массив после реализованной генерации
 }
-i=0;
-while(i<arr.Length)
+
+int CountNumbers(int[] array001)
 {
-    Console.Write($"{arr[i]} ");
-    i++;
+    int count = 0;
+    foreach (int e in array001)
+    {
+        if(e % 10 == 1 && e % 7 == 0)
+        {
+            count++;
+        }
+    }
+    return count;
 }
+
+Console.Write($"result - {Result1}");
