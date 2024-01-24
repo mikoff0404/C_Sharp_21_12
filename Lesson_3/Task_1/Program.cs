@@ -149,38 +149,64 @@
 //     i++;
 // }
 
-Console.Write("Введите размер массива - "); // вводим размер массива
-int size = int.Parse(Console.ReadLine()!); // 
 
-int[] array1 = GenerateArray(size); // обращаемся к функции генерации массива
-//получаем сгенерированный массив array1
+// Console.Write("Введите размер массива - "); // вводим размер массива
+// int size = int.Parse(Console.ReadLine()!); // 
 
-int Result1 = CountNumbers(array1); //обращение к функции подсчета четных чисел
+// int[] array1 = GenerateArray(size); // обращаемся к функции генерации массива
+// //получаем сгенерированный массив array1
 
-int[] GenerateArray(int size1) // функция генерации массива
-{
-    int[] array = new int[size1];
-    Random rnd = new Random();
-    for (int i = 0; i < size1; i++)
-    {
-        array[i] = rnd.Next(0, 99);
-        Console.Write($"{array[i]} ");
+// int Result1 = CountNumbers(array1); //обращение к функции подсчета четных чисел
+
+// int[] GenerateArray(int size1) // функция генерации массива
+// {
+//     int[] array = new int[size1];
+//     Random rnd = new Random();
+//     for (int i = 0; i < size1; i++)
+//     {
+//         array[i] = rnd.Next(0, 99);
+//         Console.Write($"{array[i]} ");
         
-    }
-    return array; // возвращаем массив после реализованной генерации
-}
+//     }
+//     return array; // возвращаем массив после реализованной генерации
+// }
 
-int CountNumbers(int[] array001)
-{
-    int count = 0;
-    foreach (int e in array001)
-    {
-        if(e % 10 == 1 && e % 7 == 0)
-        {
-            count++;
-        }
-    }
-    return count;
-}
+// int CountNumbers(int[] array001)
+// {
+//     int count = 0;
+//     foreach (int e in array001)
+//     {
+//         if(e % 10 == 1 && e % 7 == 0)
+//         {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
 
-Console.Write($"result - {Result1}");
+// Console.Write($"result - {Result1}");
+
+
+// Console.Write("Введите размер массива - "); // вводим размер массива
+// int size = int.Parse(Console.ReadLine()!); //
+
+// string[] Word = EnterArray(size);
+
+// string[] EnterArray(int size1)
+// {
+//     string[] arr = new string[size1];
+//     for (int i = 0; i < size1; i++)
+//     {
+//         Console.Write($"Введите {i} элемент массива - "); 
+//         arr[i] = Console.ReadLine()!;
+//     }
+//     return arr;
+
+// }
+
+// string ConcatenateString = string.Join("", Word);
+
+// if (int.TryParse(ConcatenateString, out int result))
+// {
+//    Console.Write(result);
+// }
