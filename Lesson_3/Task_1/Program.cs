@@ -210,3 +210,12 @@
 // {
 //    Console.Write(result);
 // }
+
+int n = 51356;
+int count = 0;
+while(n > 0)
+{
+    count = n % 10 + count;
+    n = n / 10;
+}
+Console.Write(count);
