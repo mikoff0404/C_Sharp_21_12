@@ -25,12 +25,14 @@ PrintResult(ResultArray); //обращение к функции вывода м
 int[] ReverseArray(int[] arr) // функция разворота массива
 {
     int newLength = arr.Length;
-    int[] ReversivARR = new int[newLength];
-    for (int i = 0; i < newLength; i++)
+    
+    for (int i = 0; i < newLength / 2; i++)
     {
-        ReversivARR[i] = arr[newLength - i - 1];
+        int t = arr[i];
+        arr[i] = arr[newLength - i - 1];
+        arr[newLength - i - 1] = t;
     }
-    return ReversivARR;
+    return arr;
 }
 
 void PrintResult(int[] array2) //функция вывода массива на консоль
