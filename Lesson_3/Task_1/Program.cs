@@ -212,10 +212,19 @@
 // }
 
 int n = 51356;
-int count = 0;
-while(n > 0)
+
+int result = NumbersSum(n);
+
+int NumbersSum(int m)
 {
-    count = n % 10 + count;
-    n = n / 10;
+    int count = 0;
+    while(m > 0)
+    {
+    count = m % 10 + count;
+    m = m / 10;
+    }
+    return count;
 }
-Console.Write(count);
+
+Console.Write(result);
+
